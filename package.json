@@ -1,7 +1,7 @@
 {
-  "name": "sass-project",
+  "name": "camillehotel",
   "version": "1.0.0",
-  "description": "project to practice sass",
+  "description": "presentation site",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
