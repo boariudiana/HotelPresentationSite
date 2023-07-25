@@ -390,6 +390,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 56.25em) {
+    .footer__logo-box .footer__logo {
+      width: 7.2rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;

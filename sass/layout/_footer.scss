@@ -2,4 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .footer__logo {
+        @include respond (md) {
+            width: 7.2rem;
+        }
+    }
 }
