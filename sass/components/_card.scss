@@ -81,7 +81,8 @@
 
 
     // FRONT SIDE STYLING
-    &__picture {
+    &__picture { 
+
         @include respond (md) {
             width: 100%;
             height: 40%;
@@ -89,6 +90,9 @@
             top: 0;
         }
 
+        @include respond (sm) {
+            height: 30%;
+        } 
 
         width: 35%;
         background-position: center;

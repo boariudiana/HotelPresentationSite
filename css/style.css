@@ -515,6 +515,9 @@ body {
         height: 40%;
         position: absolute;
         top: 0; } }
+    @media (max-width: 37.5em) {
+      .card__picture {
+        height: 30%; } }
     .card__picture--1 {
       background-image: url(../../assets/photos/accueil/offre1.jpg); }
     .card__picture--2 {
