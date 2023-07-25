@@ -20,6 +20,11 @@ body {
     color: $color-white;
 
     &--main {
+        @include respond(md) {
+            font-size: 4rem;
+            margin-bottom: 1rem ;
+        }
+
         font-family: "Perpetua Titling MT";
         font-weight: 300;
         font-size: calc(#{$grid-gutter-width} * 2.6 );

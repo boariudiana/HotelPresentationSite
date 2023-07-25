@@ -42,9 +42,9 @@ window.onload = changeImage;
 
 // ROTATING HEADING RESIZE 
 
-let rotatedHeadingHeight = $('.rotated-container').height(); 
+// let rotatedHeadingHeight = $('.rotated-container').height(); 
 
-$(".heading-rotated").css("width", rotatedHeadingHeight);
+// $(".heading-rotated").css("width", rotatedHeadingHeight);
 
 // FIXED NAVBAR 
 

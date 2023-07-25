@@ -3,10 +3,38 @@
     // perspective: 150rem;
     // -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;
+    height: 63rem;
+
+    &-container {
+        @include respond(lg) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    
+        @include respond (md) {
+            width: 70% !important;
+        }
+
+        & > * {
+
+            @include respond(lg) {
+                width: 100% !important;
+
+                &:first-of-type {
+                    margin-bottom: 6rem;
+                }
+            }
+        }
+    }
     
     &__side {
-        height: 52rem;
+
+        @include respond (md) {
+            height: 100%;
+        }
+        height: 63rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -20,6 +48,11 @@
         &--front {
             background-color: $color-secondary;
             display: flex;
+            position: relative;
+
+            @include respond (md) {
+                flex-flow: column-reverse;
+            }
         }
 
         &--back {
@@ -49,6 +82,14 @@
 
     // FRONT SIDE STYLING
     &__picture {
+        @include respond (md) {
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            top: 0;
+        }
+
+
         width: 35%;
         background-position: center;
         background-size: cover; 
@@ -86,6 +127,10 @@
 
 
     &__details {
+        @include respond (md) {
+            width: 100%;
+            height: 60%;
+        }
         text-align: center;
         width: 65%;
         display: flex;

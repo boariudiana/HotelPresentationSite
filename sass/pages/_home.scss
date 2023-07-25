@@ -9,11 +9,21 @@
     }
 
     &-text-content {
+        
+        @include respond(md){
+            padding: 6rem 3rem;
+            width: 100% !important;
+        }
+        
         padding: 17.7rem 0 17.7rem 3rem;
     }
 
 
     &-vertical {
+        @include respond(md){
+            display: none;
+        }
+
         overflow-x: hidden;
         width: 26%;
         position: relative;
@@ -42,11 +52,18 @@
         display: flex;
 
         &--content {
+            @include respond (md) {
+                width: 100%;
+            }
+
             width: 60%;
             padding-bottom: 5rem;
         }
 
         &--aside {
+            @include respond (md) {
+                display: none;
+            }
             width: 40%;
             overflow-x: hidden;
            position: relative;
@@ -71,22 +88,42 @@
     }
 
     &-offres {
+        @include respond(md) {
+            padding: 6rem 0;
+
+            // * > .row {
+            //     display: grid;
+            // }
+        }
+
+        &--container {
+            @include respond (md) {
+                display: flex;
+            }
+        
+        }
+
+        .rotated-container.col-1-of-5 {
+            @include respond (md) {
+                width: 30% !important;
+            }
+        }
         padding: 20rem 9rem;
 
-        .row {
-            display: flex;
-        }
-   
         .heading-secondary--main {
             &:after {
-                transform: translateX(25%);
+                transform: translateX(41%);
             }
         }
 
         .heading-rotated {
-            transform: rotate(270deg) translate(-11.5rem, -4.4rem);
+            @include respond (md) {
+                transform: rotate(270deg) translate(-13.5rem, -13.4rem);
+            }
+            transform: rotate(270deg) translate(-13.5rem, -4.4rem);
             flex: 1;
             font-size: 2.5rem;
+            width: max-content
         }
     }
 
@@ -110,6 +147,13 @@
     }
 
     &--sub {
+        
+        @include respond (md) {
+            padding-left: 0;
+            max-width: 100%;
+            margin-bottom: 3rem;
+        }
+
         max-width: 62.5rem;
         padding-left: 3rem;
     }
@@ -121,6 +165,12 @@
     overflow-x: hidden;
     position: relative;
     z-index: 3;
+
+    @include respond (md) {
+        max-width: 100vw;
+    }
+
+
 }
 
 .bg-video {
@@ -128,6 +178,10 @@
     position: relative;
 
     .btn {
+
+        @include respond(sm){
+            width: 80%;
+        };
         position: absolute !important;
         right: 0;
         bottom: -5rem;
