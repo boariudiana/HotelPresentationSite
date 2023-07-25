@@ -33,10 +33,29 @@
 
     &--white {
         background-color: $color-white;
-        color: $color-grey-dark;
+        color: $color-grey;
 
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--primary {
+        background-color: $color-white;
+        color: $color-grey;
+        border: 1px solid $color-grey !important;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-secondary;
         }
     }
 
